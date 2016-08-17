@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.type1.firmware</id>
+  <name>8Bitdo SFC30</name>
+  <summary>Firmware for the 8Bitdo SFC30 Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your SFC30 device improves performance and
+      adds new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_1235&PID_AB21 -->
+    <firmware type="flashed">f94d3231-f6e1-5ef3-a4a0-dc819d74ae54</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/sfc30/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="2.67" date="2016-02-25">
+      <checksum filename="bluetooth_firmware_V2.67.dat" target="content"/>
+      <description>
+        <p>
+          Disable device auto-sleep when the device is connected to a USB port.
+        </p>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://people.freedesktop.org/~hughsient/temp/SFC30.png</image>
+      <caption>Unplug the controller, hold down L+R+START for 3 seconds until both LEDs are flashing then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+</component>
