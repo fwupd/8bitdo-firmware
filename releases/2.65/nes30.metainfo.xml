@@ -19,7 +19,7 @@
   <project_license>Proprietary</project_license>
   <developer_name>8Bitdo</developer_name>
   <releases>
-    <release urgency="medium" version="2.67" date="2016-01-14">
+    <release urgency="medium" version="2.65" date="2016-01-14">
       <checksum filename="bluetooth_firmware_V2.65.dat" target="content"/>
       <description>
         <p>This release fixes the following issues:</p>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
 <component type="firmware">
-  <id>com.8bitdo.type1.firmware</id>
+  <id>com.8bitdo.sfc30.firmware</id>
   <name>8Bitdo SFC30</name>
   <summary>Firmware for the 8Bitdo SFC30 Game Controller</summary>
   <description>
