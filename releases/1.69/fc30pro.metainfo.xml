@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.fc30pro.firmware</id>
+  <name>8Bitdo FC30 Pro</name>
+  <summary>Firmware for the 8Bitdo FC30 Pro Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your FC30 Pro device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_1002&PID_9000 -->
+    <firmware type="flashed">66550b65-e2be-5a61-8f67-b437d312f397</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/nes30pro/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="1.69" date="2016-02-25">
+      <checksum filename="firmware.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>Disable auto-sleep when the device is connected to a USB port</li>
+          <li>Improve performance of the analog sticks</li>
+          <li>Add support for Joystick Mode to OS X</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Unplug the controller, hold down POWER+PAIRING until the yellow LED is flashing then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+</component>
