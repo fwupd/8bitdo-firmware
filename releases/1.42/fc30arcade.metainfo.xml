@@ -30,6 +30,7 @@
   </releases>
   <screenshots>
     <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/FC30ARCADE.png</image>
       <caption>Unplug the controller, hold down L+R+HOME for 3 seconds until both LEDs are flashing then reconnect the controller.</caption>
     </screenshot>
   </screenshots>

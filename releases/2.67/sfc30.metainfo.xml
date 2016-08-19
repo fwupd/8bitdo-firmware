@@ -30,7 +30,7 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://people.freedesktop.org/~hughsient/temp/SFC30.png</image>
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/SFC30.png</image>
       <caption>Unplug the controller, hold down L+R+START for 3 seconds until both LEDs are flashing then reconnect the controller.</caption>
     </screenshot>
   </screenshots>

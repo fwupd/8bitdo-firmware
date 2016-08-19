@@ -35,6 +35,7 @@
   </releases>
   <screenshots>
     <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/FC30PRO.png</image>
       <caption>Unplug the controller, hold down POWER+PAIRING until the yellow LED is flashing then reconnect the controller.</caption>
     </screenshot>
   </screenshots>
