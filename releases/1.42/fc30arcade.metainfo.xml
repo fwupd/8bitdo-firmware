@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.fc30arcade.firmware</id>
+  <name>8Bitdo FC30 Joystick</name>
+  <summary>Firmware for the 8Bitdo FC30 Joystick Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your FC30 Joystick device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_8000&PID_1002 -->
+    <firmware type="flashed">c33353e3-208f-592d-8c9e-6ece32062b8b</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/fc30joystick/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="1.42" date="2016-06-01">
+      <checksum filename="8Bitdo_joy_firmware_V1.42.dat" target="content"/>
+      <description>
+        <p>
+          Add support for Joystick Mode to OS X.
+        </p>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Unplug the controller, hold down L+R+HOME for 3 seconds until both LEDs are flashing then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+</component>
