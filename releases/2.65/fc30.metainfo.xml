@@ -2,7 +2,7 @@
 <!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
 <component type="firmware">
   <id>com.8bitdo.fc30.firmware</id>
-  <name>8Bitdo FC30</name>
+  <name>FC30</name>
   <summary>Firmware for the 8Bitdo FC30 Game Controller</summary>
   <description>
     <p>

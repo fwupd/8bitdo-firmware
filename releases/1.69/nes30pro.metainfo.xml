@@ -2,7 +2,7 @@
 <!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
 <component type="firmware">
   <id>com.8bitdo.nes30pro.firmware</id>
-  <name>8Bitdo NES30 Pro</name>
+  <name>NES30 Pro</name>
   <summary>Firmware for the 8Bitdo NES30 Pro Game Controller</summary>
   <description>
     <p>

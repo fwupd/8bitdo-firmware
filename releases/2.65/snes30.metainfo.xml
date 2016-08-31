@@ -2,7 +2,7 @@
 <!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
 <component type="firmware">
   <id>com.8bitdo.snes30.firmware</id>
-  <name>8Bitdo SNES30</name>
+  <name>SNES30</name>
   <summary>Firmware for the 8Bitdo SNES30 Game Controller</summary>
   <description>
     <p>
