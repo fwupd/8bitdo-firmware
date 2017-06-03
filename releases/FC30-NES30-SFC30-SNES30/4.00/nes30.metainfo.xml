@@ -12,6 +12,8 @@
   </description>
   <provides>
     <!-- USB\VID_2DC8&PID_AB12 -->
+    <firmware type="flashed">5421cca2-e2e8-5082-b5ad-1f873660ab28</firmware>
+    <!-- USB\VID_1235&PID_AB12 (old firmware) -->
     <firmware type="flashed">0f540624-1414-50bb-9fa6-c724b4fa4464</firmware>
   </provides>
   <url type="homepage">http://www.8bitdo.com/nes30/</url>

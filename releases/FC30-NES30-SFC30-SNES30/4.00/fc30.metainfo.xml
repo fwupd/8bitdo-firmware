@@ -12,6 +12,8 @@
   </description>
   <provides>
     <!-- USB\VID_2DC8&PID_AB11 -->
+    <firmware type="flashed">7a81a9eb-0922-5774-8803-fbce3ccbcb9e</firmware>
+    <!-- USB\VID_1235&PID_AB11 (old firmware) -->
     <firmware type="flashed">7934f46a-77cb-5ade-af34-2bd2842ced3d</firmware>
   </provides>
   <url type="homepage">http://www.8bitdo.com/fc30/</url>

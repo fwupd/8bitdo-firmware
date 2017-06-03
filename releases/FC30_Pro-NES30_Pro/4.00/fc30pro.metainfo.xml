@@ -12,6 +12,8 @@
   </description>
   <provides>
     <!-- USB\VID_2DC8&PID_9000 -->
+    <firmware type="flashed">7ff26c95-37dc-5485-b0a5-1cdaf2846da4</firmware>
+    <!-- USB\VID_1002&PID_9000 (old firmware) -->
     <firmware type="flashed">66550b65-e2be-5a61-8f67-b437d312f397</firmware>
   </provides>
   <url type="homepage">http://www.8bitdo.com/nes30pro/</url>

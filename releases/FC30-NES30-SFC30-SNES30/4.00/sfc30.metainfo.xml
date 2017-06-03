@@ -12,6 +12,8 @@
   </description>
   <provides>
     <!-- USB\VID_2DC8&PID_AB21 -->
+    <firmware type="flashed">a7fcfbaf-e9e8-59f4-920d-7691dc6c8699</firmware>
+    <!-- USB\VID_1235&PID_AB21 (old firmware) -->
     <firmware type="flashed">f94d3231-f6e1-5ef3-a4a0-dc819d74ae54</firmware>
   </provides>
   <url type="homepage">http://www.8bitdo.com/sfc30/</url>

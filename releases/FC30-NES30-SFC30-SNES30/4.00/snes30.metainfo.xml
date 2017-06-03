@@ -12,6 +12,8 @@
   </description>
   <provides>
     <!-- USB\VID_2DC8&PID_AB20 -->
+    <firmware type="flashed">4cb172ce-9849-5603-8814-a3d455932012</firmware>
+    <!-- USB\VID_1235&PID_AB20 (old firmware) -->
     <firmware type="flashed">8baed357-638e-5b54-b582-0476bf7d6348</firmware>
   </provides>
   <url type="homepage">http://www.8bitdo.com/snes30/</url>
