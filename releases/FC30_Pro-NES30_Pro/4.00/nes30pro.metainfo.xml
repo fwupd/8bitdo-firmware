@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.nes30pro.firmware</id>
+  <name>NES30 Pro</name>
+  <summary>Firmware for the 8Bitdo NES30 Pro Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your NES30 Pro device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_9001 -->
+    <firmware type="flashed">4fa94782-9ab0-531f-b038-a3e79ddf4b19</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/nes30pro/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="4.00" date="2017-06-03">
+      <checksum filename="Pro_Firmware_V4.00.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>Enhance the stability of the Bluetooth automatic connection</li>
+          <li>Modify the value of the arrow and joystick on PC Joystick mode</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/NES30PRO.png</image>
+      <caption>Unplug the controller, hold down POWER+PAIRING until the yellow LED is flashing then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+</component>
