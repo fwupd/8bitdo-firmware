@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.nes30.firmware</id>
+  <name>NES30</name>
+  <summary>Firmware for the 8Bitdo NES30 Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your NES30 device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_AB12 -->
+    <firmware type="flashed">0f540624-1414-50bb-9fa6-c724b4fa4464</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/nes30/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="4.00" date="2017-06-03">
+      <checksum filename="bluetooth_firmware_v4.00.dat" target="content"/>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/NES30.png</image>
+      <caption>Unplug the controller, hold down L+R+START for 3 seconds until both LEDs are flashing then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+</component>
