@@ -31,4 +31,10 @@
       <caption>Unplug the controller, hold down L+R+START for 3 seconds until both LEDs are flashing then reconnect the controller.</caption>
     </screenshot>
   </screenshots>
+
+  <!-- only newer versions of fwupd know about the new VID -->
+  <requires>
+    <id compare="ge" version="0.9.3">org.freedesktop.fwupd</id>
+  </requires>
+
 </component>
