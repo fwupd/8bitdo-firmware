@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.fc30pro.firmware</id>
+  <name>FC30 Pro</name>
+  <summary>Firmware for the 8Bitdo FC30 Pro Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your FC30 Pro device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_9000 -->
+    <firmware type="flashed">7ff26c95-37dc-5485-b0a5-1cdaf2846da4</firmware>
+    <!-- USB\VID_1002&PID_9000 (old firmware) -->
+    <firmware type="flashed">66550b65-e2be-5a61-8f67-b437d312f397</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/nes30pro/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="4.01" date="2017-09-22">
+      <checksum filename="Pro_Firmware_V4.01.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>Enhance the stability of the Bluetooth automatic connection</li>
+          <li>Modify the value of the arrow and joystick on PC Joystick mode</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/FC30PRO.png</image>
+      <caption>Unplug the controller, hold down POWER+PAIRING until the yellow LED is flashing then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new VID -->
+  <requires>
+    <id compare="ge" version="0.9.3">org.freedesktop.fwupd</id>
+  </requires>
+
+</component>
