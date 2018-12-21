@@ -30,7 +30,21 @@
   <project_license>Proprietary</project_license>
   <developer_name>8Bitdo</developer_name>
   <releases>
-    <release urgency="medium" version="1.25" date="﻿2018-02-24" timestamp="1519426800">
+    <release urgency="medium" version="1.23" date="2017-12-28">
+      <checksum filename="Firmware_SF30&amp;SN30_Pro_V1.23.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>Enhanced vibration optimization on Xinput mode</li>
+          <li>Added USB connection to Mac mode</li>
+          <li>Fixed the bug that the controller would not turn on occasionally</li>
+          <li>Enhance the stability of the Bluetooth automatic connection</li>
+        </ul>
+      </description>
+    </release>
+    <release urgency="medium" version="1.25" date="2018-02-24" timestamp="1519426800">
       <checksum filename="Firmware_SF30&amp;SN30_Pro_V1.25.dat" target="content"/>
       <description>
         <p>
@@ -38,6 +52,28 @@
         </p>
         <ul>
           <li>Enhance the accuracy of analog on SWITCH mode</li>
+        </ul>
+      </description>
+    </release>
+    <release urgency="medium" version="1.26" date="2018-05-19" timestamp="1526680800">
+      <checksum filename="Firmware_SF30&amp;SN30_Pro_V1.26.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>Enhance the accuracy of vibration on SWITCH mode.</li>
+        </ul>
+      </description>
+    </release>
+    <release urgency="medium" version="1.29" date="2018-10-11" timestamp="1539216000">
+      <checksum filename="Firmware_SF30&amp;SN30_Pro_V1.29.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>Fixed the Name error when work on USB.</li>
         </ul>
       </description>
     </release>
@@ -54,4 +90,7 @@
     <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
   </requires>
 
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
 </component>
