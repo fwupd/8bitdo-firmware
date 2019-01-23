@@ -2,11 +2,11 @@
 
 VENDOR=8Bitdo
 PROJECT_NAME=SF30_Pro-SN30_Pro
-FIRMWARE_FILES=$(wildcard */*.dat)
-METAINFO_FILES=n30pro2.metainfo.xml
+VERSION=1.25
+FIRMWARE_FILES=Firmware_SF30&SN30_Pro_V$(VERSION).dat
 METAINFO_FILES=sf30sn30pro.metainfo.xml
 
-all: $(VENDOR)-$(PROJECT_NAME).cab
+all: $(VENDOR)-$(PROJECT_NAME)-$(VERSION).cab
 
 clean:
 	rm *.cab
@@ -15,4 +15,4 @@ check: $(METAINFO_FILES)
 	appstream-util validate-relax $(METAINFO_FILES)
 
 %.cab: $(FIRMWARE_FILES) $(METAINFO_FILES)
-	gcab --create --nopath $@ $(addprefix ",$(addsuffix ",$(FIRMWARE_FILES))) $(METAINFO_FILES)
+	gcab --create --nopath $@ "$(FIRMWARE_FILES)" $(METAINFO_FILES)
