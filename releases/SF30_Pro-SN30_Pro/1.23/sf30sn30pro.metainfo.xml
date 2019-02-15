@@ -55,4 +55,7 @@
     <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
   </requires>
 
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
 </component>
