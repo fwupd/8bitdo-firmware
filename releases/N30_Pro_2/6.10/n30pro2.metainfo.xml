@@ -3,7 +3,7 @@
 <!-- Copyright 2018 Mario Limonciello <mario.limonciello@dell.com> -->
 <component type="firmware">
   <id>com.8bitdo.n30pro2.firmware</id>
-  <name>SF30/SN30 Pro</name>
+  <name>N30 Pro 2</name>
   <summary>Firmware for the 8Bitdo N30 Pro 2 Game Controller</summary>
   <description>
     <p>
