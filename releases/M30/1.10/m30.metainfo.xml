@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.m30.firmware</id>
+  <name>M30</name>
+  <summary>Firmware for the 8Bitdo M30 Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your M30 device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_5006 -->
+    <firmware type="flashed">b02f1319-c1c4-54f4-b7f2-5bb3552f6a9e</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/m30/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="1.10" date="2019-04-08">
+      <checksum filename="M30_Firmware_V1.10.dat" target="content"/>
+      <description>
+        <p>
+          Enhanced the stability of the Bluetooth pairing.
+        </p>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/M30.png</image>
+      <caption>Unplug the controller, hold down L+R+START for 3 seconds until both LEDs are flashing then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new VID -->
+  <requires>
+    <id compare="ge" version="1.2.7">org.freedesktop.fwupd</id>
+  </requires>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+
+</component>
