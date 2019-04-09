@@ -37,7 +37,7 @@
 
   <!-- only newer versions of fwupd know about the new VID -->
   <requires>
-    <id compare="ge" version="0.9.3">org.freedesktop.fwupd</id>
+    <id compare="ge" version="1.2.7">org.freedesktop.fwupd</id>
   </requires>
   <custom>
     <value key="LVFS::UpdateProtocol">com.8bitdo</value>
