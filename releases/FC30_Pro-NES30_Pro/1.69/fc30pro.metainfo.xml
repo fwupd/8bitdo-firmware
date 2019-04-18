@@ -39,6 +39,9 @@
       <caption>Unplug the controller, hold down POWER+PAIRING until the yellow LED is flashing then reconnect the controller.</caption>
     </screenshot>
   </screenshots>
+  <categories>
+    <category>X-Device</category>
+  </categories>
   <custom>
     <value key="LVFS::UpdateProtocol">com.8bitdo</value>
   </custom>

@@ -46,6 +46,9 @@
     <id compare="ge" version="0.9.3">org.freedesktop.fwupd</id>
   </requires>
 
+  <categories>
+    <category>X-Device</category>
+  </categories>
   <custom>
     <value key="LVFS::UpdateProtocol">com.8bitdo</value>
   </custom>
