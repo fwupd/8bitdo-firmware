@@ -7,7 +7,7 @@ generated `.cab` files can be installed using `gnome-software` or `fwupdmgr`.
 
 Note: Make sure the GamePad battery is NOT empty before flashing.
 
-See http://www.8bitdo.com/snes30/firmware.html for more details.
+See https://web.archive.org/web/20170520112357/http://www.8bitdo.com/snes30/firmware.html for more details.
 
 # Legal Notice
 
