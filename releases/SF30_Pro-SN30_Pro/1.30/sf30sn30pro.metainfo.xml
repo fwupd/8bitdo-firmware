@@ -30,7 +30,7 @@
   <project_license>Proprietary</project_license>
   <developer_name>8Bitdo</developer_name>
   <releases>
-    <release urgency="medium" version="1.29" date="2019-02-19" timestamp="1550619318">
+    <release urgency="medium" version="1.30" date="2019-02-19" timestamp="1550619318">
       <checksum filename="Firmware_SF30&amp;SN30_Pro_V1.30.dat" target="content"/>
       <description>
         <p>
