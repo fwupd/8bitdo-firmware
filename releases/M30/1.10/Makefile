@@ -4,7 +4,7 @@ VENDOR=8Bitdo
 PROJECT_NAME=M30
 VERSION=1.10
 FIRMWARE_FILES=				\
-	M30_Firmware_V1.10.dat
+	M30_Firmware_V$(VERSION).dat
 METAINFO_FILES=				\
 	m30.metainfo.xml
 
