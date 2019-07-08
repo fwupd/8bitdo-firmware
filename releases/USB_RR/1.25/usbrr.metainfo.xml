@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.usbrr.firmware</id>
+  <name>USB Retro Receiver</name>
+  <summary>Firmware for the 8Bitdo USB Retro Receiver</summary>
+  <description>
+    <p>
+      Updating the firmware on your USB Retro Receiver improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_0483&PID_5760 -->
+    <firmware type="flashed">bc1739b5-313d-5a82-a123-95e5dc4a5702</firmware>
+    <!-- USB\VID_045E&PID_028E -->
+    <firmware type="flashed">e5f6e0cf-c156-58e6-94e5-10ef2dff807c</firmware> 
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/wireless-usb-adapter/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="1.25" date="2019-06-25">
+      <checksum filename="8Bitdo_USB_RR_Firmware_V1.25.dat" target="content"/>
+      <description>
+        <p>
+		This stable release fixes the following issues:
+	</p>
+	<ul>
+		<li>Fixed the abnormal vibration problem of Resident Evil Revelations 2 and Splatoon 2 on switch console.</li>
+	</ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source"></image>
+      <caption>Hold down the pair button of the receiver and connect it to the PC.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new VID -->
+  <requires>
+    <id compare="ge" version="1.2.7">org.freedesktop.fwupd</id>
+  </requires>
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+
+</component>
