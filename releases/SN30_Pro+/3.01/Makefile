@@ -4,7 +4,7 @@ VENDOR=8Bitdo
 PROJECT_NAME=SN30_Pro+
 VERSION=3.01
 FIRMWARE_FILES=Firmware_SN30_Pro+_V$(VERSION).dat
-METAINFO_FILES=sn30pro+.metainfo.xml
+METAINFO_FILES=sn30pro_plus.metainfo.xml
 
 all: $(VENDOR)-$(PROJECT_NAME)-$(VERSION).cab
 

@@ -2,7 +2,7 @@
 <!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
 <!-- Copyright 2019 Mario Limonciello <mario.limonciello@dell.com> -->
 <component type="firmware">
-  <id>com.8bitdo.sn30pro+.firmware</id>
+  <id>com.8bitdo.sn30pro_plus.firmware</id>
   <name>SN30 Pro+</name>
   <summary>Firmware for the 8Bitdo SN30 Pro+ Game Controller</summary>
   <description>
