@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<!-- Copyright 2019 Mario Limonciello <mario.limonciello@dell.com> -->
+<component type="firmware">
+  <id>com.8bitdo.sf30sn30pro.firmware</id>
+  <name>SF30/SN30 Pro</name>
+  <summary>Firmware for the 8Bitdo SF30/SN30 Pro Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your SF30/SN30 Pro device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_057E&PID_2009 -->
+    <firmware type="flashed">b3850dd5-a010-5d5c-8834-2ff809e95869</firmware>
+    <!-- USB\VID_2DC8&PID_6000 -->
+    <firmware type="flashed">269b3121-097b-50d8-b9ba-d1f64f9cd241</firmware>
+    <!-- USB\VID_2DC8&PID_6001 -->
+    <firmware type="flashed">81becceb-f87b-5c66-b30a-b0958043d65d</firmware>
+    <!-- USB\VID_045E&PID_028E -->
+    <firmware type="flashed">e5f6e0cf-c156-58e6-94e5-10ef2dff807c</firmware>
+    <!-- USB\VID_054C&PID_05C4 -->
+    <firmware type="flashed">50afc861-c345-56d2-b4be-8a54e6a1ed12</firmware>
+    <!-- USB\VID_2dC8&PID_5750 -->
+    <firmware type="flashed">b02f1319-c1c4-54f4-b7f2-5bb3552f6a9e</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/sn30pro-sf30pro/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="1.33" date="2019-11-29" timestamp="1550619318">
+      <checksum filename="Firmware_SF30&amp;SN30_Pro_V1.33.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+	</p>
+        <ul>
+	  <li>Optimize speed for Bluetooth reconnection.</li>
+	  <li>Added bluetooth pairing function via USB cable on Switch mode.</li>
+	  <li>Fixed the battery indication error when connected to Switch.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/sn30-pro.svg</image>
+      <caption>Unplug the controller, hold down L1 + R1 + START until the red LED on top of the controller is flashing and then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new controller -->
+  <requires>
+    <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
+  </requires>
+
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+</component>
