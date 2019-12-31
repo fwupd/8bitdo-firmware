@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<!-- Copyright 2019 Mario Limonciello <mario.limonciello@dell.com> -->
+<component type="firmware">
+  <id>com.8bitdo.sn30pro_plus.firmware</id>
+  <name>SN30 Pro+</name>
+  <summary>Firmware for the 8Bitdo SN30 Pro+ Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your SN30 Pro+ device improves performance and
+      adds new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_6002&REV_0001 -->
+    <firmware type="flashed">64eb3e9c-e79c-50d0-984b-21a1641f37c5</firmware>
+    <!-- USB\VID_2DC8&PID_6002 -->
+    <firmware type="flashed">a9a82ee0-7fdc-5d80-bd73-6b39f7a4f061</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/sn30pro-plus/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="3.02" date="2019-11-07" timestamp="1573159318">
+      <checksum filename="Firmware_SN30_Pro+_V3.02.dat" target="content"/>
+      <description>
+        <p>This stable release fixes the following issues:</p>
+        <ul>
+          <li>Added bluetooth pairing function via USB cable on Switch mode.</li>
+          <li>Fixed the battery indication error when connected to Switch.</li>
+          <li>Enhance the accuracy of joystick.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/fwupd/8bitdo-firmware/master/screenshots/sn30-pro.png</image>
+      <caption>Unplug the controller, hold down L1 + R1 + START until the red LED on top of the controller is flashing and then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new controller -->
+  <requires>
+    <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
+  </requires>
+
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+</component>
