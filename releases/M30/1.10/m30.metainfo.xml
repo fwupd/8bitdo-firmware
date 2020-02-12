@@ -12,7 +12,7 @@
   </description>
   <provides>
     <!-- USB\VID_2DC8&PID_5006 -->
-    <firmware type="flashed">b02f1319-c1c4-54f4-b7f2-5bb3552f6a9e</firmware>
+    <firmware type="flashed">49c74d94-86d7-5587-b48f-aa36decb1568</firmware>
   </provides>
   <url type="homepage">http://www.8bitdo.com/m30/</url>
   <metadata_license>CC0-1.0</metadata_license>
