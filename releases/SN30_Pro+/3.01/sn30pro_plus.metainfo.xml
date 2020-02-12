@@ -7,8 +7,8 @@
   <summary>Firmware for the 8Bitdo SN30 Pro+ Game Controller</summary>
   <description>
     <p>
-      Updating the firmware on your SN30 Pro+ device improves performance and adds
-      new features.
+      Updating the firmware on your SN30 Pro+ device improves performance and
+      adds new features.
     </p>
   </description>
   <provides>
@@ -25,12 +25,10 @@
     <release urgency="medium" version="3.01" date="2019-08-09" timestamp="1565309220">
       <checksum filename="Firmware_SN30_Pro+_V3.01.dat" target="content"/>
       <description>
-        <p>
-          This stable release fixes the following issues:
-        </p>
+        <p>This stable release fixes the following issues:</p>
         <ul>
-            <li>Fixed the latency issue when using the Switch with Joy-cons attached</li>
-            <li>Compatible with 8BitDo Ultimate Software</li> 
+          <li>Fixed the latency issue when using the Switch with Joy-cons attached</li>
+          <li>Compatible with 8BitDo Ultimate Software</li>
         </ul>
       </description>
     </release>
