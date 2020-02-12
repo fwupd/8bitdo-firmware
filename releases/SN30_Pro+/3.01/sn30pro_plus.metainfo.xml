@@ -12,10 +12,10 @@
     </p>
   </description>
   <provides>
-    <!-- USB\VID_2DC8&PID_5750&REV_020 -->
-    <firmware type="flashed">78acf201-a624-5c0b-a521-e204be14e3d5</firmware>
-    <!-- USB\VID_2DC8&PID_5750 -->
-    <firmware type="flashed">b02f1319-c1c4-54f4-b7f2-5bb3552f6a9e</firmware>
+    <!-- USB\VID_2DC8&PID_6002&REV_0001 -->
+    <firmware type="flashed">64eb3e9c-e79c-50d0-984b-21a1641f37c5</firmware>
+    <!-- USB\VID_2DC8&PID_6002 -->
+    <firmware type="flashed">a9a82ee0-7fdc-5d80-bd73-6b39f7a4f061</firmware>
   </provides>
   <url type="homepage">http://www.8bitdo.com/sn30pro-plus/</url>
   <metadata_license>CC0-1.0</metadata_license>
