@@ -35,7 +35,7 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/sn30-pro.svg</image>
+      <image type="source">https://raw.githubusercontent.com/fwupd/8bitdo-firmware/master/screenshots/sn30-pro.png</image>
       <caption>Unplug the controller, hold down L1 + R1 + START until the red LED on top of the controller is flashing and then reconnect the controller.</caption>
     </screenshot>
   </screenshots>
