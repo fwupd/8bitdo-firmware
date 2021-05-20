@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.8bitdo.n30arcade.firmware</id>
+  <name>N30 Arcade</name>
+  <summary>Firmware for the 8Bitdo N30 Arcade Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your N30 Arcade device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_1003 -->
+    <firmware type="flashed">c33353e3-208f-592d-8c9e-6ece32062b8b</firmware>
+  </provides>
+  <url type="homepage">https://www.8bitdo.com/n30-arcade-stick/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="5.10" date="2019-12-12">
+      <checksum filename="8Bitdo_joy_firmware_V5.10.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+          <li>Added bluetooth pairing function via USB cable on Switch mode.</li>
+          <li>Fixed the pop up error message for Amiibo on Switch mode.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/FC30ARCADE.png</image>
+      <caption>Unplug the controller, hold down L+R+start for 1 seconds until both LEDs are flashing then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+</component>
