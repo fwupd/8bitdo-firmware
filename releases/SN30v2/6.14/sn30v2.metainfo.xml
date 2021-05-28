@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<!-- Copyright 2019 Mario Limonciello <mario.limonciello@dell.com> -->
+<component type="firmware">
+  <id>com.8bitdo.sn30v2.firmware</id>
+  <name>SN30 gamepad</name>
+  <summary>Firmware for the 8BitDo SN30 gamepad Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your SN30 gamepad device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_9012 -->
+    <firmware type="flashed">bab1d618-df63-55b5-877e-85bfaa9c85fc</firmware>
+  </provides>
+  <url type="homepage">https://www.8bitdo.com/sn30-gp/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8BitDo</developer_name>
+  <releases>
+    <release urgency="medium" version="6.14" date="2019-12-03">
+      <checksum filename="Firmware_SN30v2_v6.14.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+	      </p>
+        <ul>
+	        <li>Added Support bluetooth pairing via USB when it work on Switch mode.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/sn30v2.png</image>
+      <caption>Unplug the controller and hold down the start button for 3 seconds to power off, then press the L + R + Start buttons to power on,  red LED on top of the controller is flashing  and then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new controller -->
+  <requires>
+    <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
+  </requires>
+
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+</component>
