@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<!-- Copyright 2019 Mario Limonciello <mario.limonciello@dell.com> -->
+<component type="firmware">
+  <id>com.8bitdo.sn30proforandroid.firmware</id>
+  <name>SN30 Pro for Android</name>
+  <summary>Firmware for the 8BitDo SN30 Pro for Android Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your SN30 Pro for Android device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_2100 -->
+    <firmware type="flashed">a050eb06-ae80-5879-8711-e84a4537c2fa</firmware>
+  </provides>
+  <url type="homepage">https://www.8bitdo.com/sn30-pro-for-xbox-cloud-gaming-on-android//url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8BitDo</developer_name>
+  <releases>
+    <release urgency="high" version="2.00" date="2021-03-26">
+      <checksum filename="Firmware_SN30_Pro_for_Android_v2.00.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+	      </p>
+        <ul>
+	        <li>Enhanced the compatibility of Android games.</li>
+	        <li>Enhanced the compatibility of Xbox Game Pass.</li>
+	        <li>Fixed the Bluetooth reconnection slowly problem.</li>
+          <li>Note: The HID service has changed. The connected devices need to be unpaired and reconnected. </li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/SN30_Pro_for_Android.png</image>
+      <caption>Unplug the controller and hold down the Xbox button for 6 seconds to power off, then press the LB + RB + Xbox buttons both white LED and green LED blink and then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new controller -->
+  <requires>
+    <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
+  </requires>
+
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+</component>
