@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Richard Hughes <richard@hughsie.com> -->
+<!-- Copyright 2019 Mario Limonciello <mario.limonciello@dell.com> -->
+<component type="firmware">
+  <id>com.8bitdo.sn30pro_plus.firmware</id>
+  <name>SN30 Pro+</name>
+  <summary>Firmware for the 8Bitdo SN30 Pro+ Game Controller</summary>
+  <description>
+    <p>
+      Updating the firmware on your SN30 Pro+ device improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_5750&REV_020 -->
+    <firmware type="flashed">78acf201-a624-5c0b-a521-e204be14e3d5</firmware>
+    <!-- USB\VID_2DC8&PID_5750 -->
+    <firmware type="flashed">b02f1319-c1c4-54f4-b7f2-5bb3552f6a9e</firmware>
+  </provides>
+  <url type="homepage">http://www.8bitdo.com/sn30pro-plus/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8Bitdo</developer_name>
+  <releases>
+    <release urgency="medium" version="4.02" date="2020-09-25" timestamp="1601045708">
+      <checksum filename="Firmware_SN30_Pro+_V4.02.dat" target="content"/>
+      <description>
+        <p>
+          This stable release fixes the following issues:
+        </p>
+        <ul>
+            <li>Fixed the problem that L2 and R2 buttons cannot be added in the macro command when the Altimate Software is set on Android and Switch mode.</li>
+            <li>Fixed the problem of interfering with other Bluetooth devices when the gamepad  is connecting via Bluetooth.</li>
+            <li>Fixed the problem of insensitive movement when playing "Hollow Knight" on Xinput mode via Bluetooth connection with Win10.</li>
+            <li>Fixed the Home button keycode value on Dinput mode.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/sn30-pro.svg</image>
+      <caption>Unplug the controller, hold down L1 + R1 + START until the red LED on top of the controller is flashing and then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new controller -->
+  <requires>
+    <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
+  </requires>
+
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+</component>
