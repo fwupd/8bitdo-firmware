@@ -28,7 +28,7 @@
         <p>This stable release fixes the following issues:</p>
         <ul>
           <li>Optimized the accuracy of joystick.</li>
-          <li>Fixed the problem that turbo function cannot be used for ZL & ZR when the Ultimate Software is set on Switch mode.</li>
+          <li>Fixed the problem that turbo function cannot be used for ZL / ZR when the Ultimate Software is set on Switch mode.</li>
         </ul>
       </description>
     </release>
