@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# based on https://ladis.cloud/blog/posts/firmware-update-8bitdo.html
+
 import requests,json,sys,os
 import urllib.request
 
