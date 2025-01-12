@@ -8,7 +8,10 @@ baseurl = "http://dl.8bitdo.com:8080"
 things = {}
 
 def halp():
-    print("Halp!")
+    print("Usage: 8bitdo-firmware.py ...\n")
+    print("\t-l\t\tlist all available devices")
+    print("\t-l [num]\tlist all firmware versions for device [num]")
+    print("\t-f [num] [ver]\tfetch firmware version [ver] for device [num]\n")
     exit(0)
 
 print("8BitDo Firmware Fetcher v0.0.1\n")
@@ -36,6 +39,9 @@ if sys.argv[1] == "-l":
     else:
 
         num = int(sys.argv[2])
+        if num not in things:
+            print("... device number not found.\n")
+            exit(1)
         fws = things[num]
 
         print("Firmware versions for "+fws[0]["fileName"]+" (#"+str(num)+"):\n")
@@ -62,5 +68,8 @@ if sys.argv[1] == "-f":
             file = os.path.basename(url)
             print("Downloading: "+url)
             urllib.request.urlretrieve(url,file)
-            print("Saved firmware to "+file)
+            print("Saved firmware to "+file+".\n")
             exit(0)
+
+    print("... version not found.\n")
+    exit(1)
