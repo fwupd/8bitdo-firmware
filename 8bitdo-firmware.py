@@ -12,7 +12,7 @@ baseurl = "http://dl.8bitdo.com:8080"
 
 products = {}
 
-def halp():
+def help():
     print("Usage: 8bitdo-firmware.py ...\n")
     print("\t-l\t\tlist all available devices")
     print("\t-l [num]\tlist all firmware versions for device [num]")
@@ -22,7 +22,7 @@ def halp():
 print("8BitDo Firmware Fetcher v0.0.1\n")
 
 if len(sys.argv) == 1 or sys.argv[1] in [ "-?", "-h", "--help" ]:
-    halp()
+    help()
 
 response = requests.post(baseurl+"/firmware/select",headers={"Beta":"1"})
 result = response.json()
@@ -61,7 +61,7 @@ if sys.argv[1] == "-l":
 if sys.argv[1] == "-f":
 
     if len(sys.argv) != 4:
-        halp()
+        help()
 
     num = int(sys.argv[2])
     ver = sys.argv[3]
