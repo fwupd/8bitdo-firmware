@@ -39,7 +39,6 @@ if sys.argv[1] == "-l":
     
         for num,item in products.items():
             print(f"{num}:\t{item[0]["fileName"]}")
-        exit(0)
 
     else:
 
@@ -55,6 +54,9 @@ if sys.argv[1] == "-l":
             ver = str(fw["version"])
             beta = " (beta)" if fw["beta"] != "" else ""
             print(f"{ver[0:4]} (build {ver[4:]})"+beta)
+
+    print("")
+    exit(0)
 
 if sys.argv[1] == "-f":
 
