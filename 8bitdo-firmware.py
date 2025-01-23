@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+# (c) 2025 Florian 'floe' Echtler <floe@butterbrot.org>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 # based on https://ladis.cloud/blog/posts/firmware-update-8bitdo.html
 
 import requests,json,sys,os
