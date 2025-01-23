@@ -10,7 +10,7 @@ import urllib.request
 
 baseurl = "http://dl.8bitdo.com:8080"
 
-things = {}
+products = {}
 
 def halp():
     print("Usage: 8bitdo-firmware.py ...\n")
@@ -29,25 +29,25 @@ result = response.json()
 
 for item in result["list"]:
     num = item["type"]
-    if not num in things:
-        things[num] = []
-    things[num].append(item)
+    if not num in products:
+        products[num] = []
+    products[num].append(item)
 
 if sys.argv[1] == "-l":
 
     if len(sys.argv) == 2:
     
-        for num,item in things.items():
+        for num,item in products.items():
             print(str(num)+":\t"+item[0]["fileName"])
         exit(0)
 
     else:
 
         num = int(sys.argv[2])
-        if num not in things:
+        if num not in products:
             print("... device number not found.\n")
             exit(1)
-        fws = things[num]
+        fws = products[num]
 
         print("Firmware versions for "+fws[0]["fileName"]+" (#"+str(num)+"):\n")
 
@@ -64,7 +64,7 @@ if sys.argv[1] == "-f":
     num = int(sys.argv[2])
     ver = sys.argv[3]
 
-    fws = things[num]
+    fws = products[num]
 
     print("Fetching firmware "+ver+" for "+fws[0]["fileName"]+" (#"+str(num)+"):\n")
     for fw in fws:
