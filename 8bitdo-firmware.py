@@ -38,7 +38,7 @@ if sys.argv[1] == "-l":
     if len(sys.argv) == 2:
     
         for num,item in products.items():
-            print(str(num)+":\t"+item[0]["fileName"])
+            print(f"{num}:\t{item[0]["fileName"]}")
         exit(0)
 
     else:
@@ -49,12 +49,12 @@ if sys.argv[1] == "-l":
             exit(1)
         fws = products[num]
 
-        print("Firmware versions for "+fws[0]["fileName"]+" (#"+str(num)+"):\n")
+        print(f"Firmware versions for {fws[0]["fileName"]} (#{num}):\n")
 
         for fw in fws:
             ver = str(fw["version"])
             beta = " (beta)" if fw["beta"] != "" else ""
-            print(ver[0:4]+" (build "+ver[4:]+")"+beta)
+            print(f"{ver[0:4]} (build {ver[4:]})"+beta)
 
 if sys.argv[1] == "-f":
 
@@ -66,7 +66,7 @@ if sys.argv[1] == "-f":
 
     fws = products[num]
 
-    print("Fetching firmware "+ver+" for "+fws[0]["fileName"]+" (#"+str(num)+"):\n")
+    print(f"Fetching firmware {ver} for {fws[0]["fileName"]} (#{num}):\n")
     for fw in fws:
         if str(fw["version"]).startswith(ver):
             url = baseurl+fw["filePathName"]
