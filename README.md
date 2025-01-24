@@ -2,6 +2,10 @@
 
 Firmware for 8Bitdo controllers
 
+_NOTE:_ sometime in 2020, 8BitDo stopped providing downloadable firmware files and switched to an opaque API.
+Some information is provided at https://ladis.cloud/blog/posts/firmware-update-8bitdo.html and firmware files
+can now be downloaded using `8bitdo-firmware.py`.
+
 The `.dat` files can be applied using the `ebitdo-tool` binary in fwupd, or the
 generated `.cab` files can be installed using `gnome-software` or `fwupdmgr`.
 
