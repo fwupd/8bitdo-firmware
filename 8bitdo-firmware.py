@@ -40,7 +40,7 @@ if sys.argv[1] == "-l":
     if len(sys.argv) == 2:
 
         for num, item in products.items():
-            print(f"{num}:\t{item[0]["fileName"]}")
+            print(f'{num}:\t{item[0]["fileName"]}')
 
     else:
 
@@ -50,7 +50,7 @@ if sys.argv[1] == "-l":
             exit(1)
         fws = products[num]
 
-        print(f"Firmware versions for {fws[0]["fileName"]} (#{num}):\n")
+        print(f'Firmware versions for {fws[0]["fileName"]} (#{num}):\n')
 
         for fw in fws:
             ver = str(fw["version"])
@@ -70,7 +70,7 @@ if sys.argv[1] == "-f":
 
     fws = products[num]
 
-    print(f"Fetching firmware {ver} for {fws[0]["fileName"]} (#{num}):\n")
+    print(f'Fetching firmware {ver} for {fws[0]["fileName"]} (#{num}):\n')
     for fw in fws:
         if str(fw["version"]).startswith(ver):
             url = baseurl + fw["filePathName"]

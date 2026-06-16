@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# python files
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
