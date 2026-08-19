@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2026 8BitDo <xuxy@8bitdo.com> -->
+<component type="firmware">
+  <id>com.8bitdo.sn30pro_plus.firmware</id>
+  <name>8BitDo SN30 Pro+ Bluetooth Gamepad</name>
+  <summary>Firmware for the 8BitDo SN30 Pro+ Bluetooth Gamepad</summary>
+  <description>
+    <p>
+      Update your 8BitDo SN30 Pro+ Bluetooth Gamepad to the latest firmware version to enjoy improved performance, new features, and bug fixes.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_6002&REV_0001 -->
+    <firmware type="flashed">64eb3e9c-e79c-50d0-984b-21a1641f37c5</firmware>
+    <!-- USB\VID_2DC8&PID_6002 -->
+    <firmware type="flashed">a9a82ee0-7fdc-5d80-bd73-6b39f7a4f061</firmware>
+  </provides>
+  <url type="homepage">https://www.8bitdo.com/sn30-pro-plus/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8BitDo</developer_name>
+  <releases>
+    <release urgency="medium" version="5.03" date="2021-10-15">
+      <checksum filename="Firmware_SN30_Pro+_V5.03.dat" target="content"/>
+      <description xml:lang="zh-CN">
+        <p>
+          本次更新包含以下优化与修复：
+        </p>
+        <ul>
+          <li>修复 Switch 模式异常断连问题。</li>
+        </ul>
+      </description>
+      <description>
+        <p>
+          This release includes the following improvements and fixes:
+        </p>
+        <ul>
+          <li>Fixed abnormal disconnect issue on Switch mode.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/fwupd/8bitdo-firmware/master/screenshots/sn30-pro.png</image>
+      <caption>Hold the Start button for 3 seconds to power off the controller, then press L1 + R1 + Start to enter update mode. The power indicator will flash, and then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new controller -->
+  <requires>
+    <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
+  </requires>
+
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+</component>
