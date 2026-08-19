@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2026 8BitDo <xuxy@8bitdo.com> -->
+<component type="firmware">
+  <id>com.8bitdo.m30.firmware</id>
+  <name>8BitDo M30 Bluetooth Gamepad</name>
+  <summary>Firmware for the 8BitDo M30 Bluetooth Gamepad</summary>
+  <description>
+    <p>
+      Update your 8BitDo M30 Bluetooth Gamepad to the latest firmware version to enjoy improved performance, new features, and bug fixes.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_5006 -->
+    <firmware type="flashed">49c74d94-86d7-5587-b48f-aa36decb1568</firmware>
+  </provides>
+  <url type="homepage">https://www.8bitdo.com/m30/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8BitDo</developer_name>
+  <releases>
+    <release urgency="critical" version="2.00" date="2023-06-27">
+      <checksum filename="Firmware_M30_V2.00.dat" target="content"/>
+      <description xml:lang="zh-CN">
+        <p>
+          重要提示：请尽快更新至此版本。更新完成后，无法降级或回滚至较早的固件版本。
+        </p>
+        <p>
+          本次更新包含以下优化与修复：
+        </p>
+        <ul>
+          <li>优化蓝牙连接的稳定性。</li>
+        </ul>
+      </description>
+      <description>
+        <p>
+          Important: Please update to this version as soon as possible. After updating, you cannot downgrade or roll back to an earlier firmware version.
+        </p>
+        <p>
+          This release includes the following improvements and fixes:
+        </p>
+        <ul>
+          <li>Optimized the stability over Bluetooth connection.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/M30.png</image>
+      <caption>Hold the Start button for 3 seconds to power off the controller, then press L + R + Start to enter update mode. The power indicator will flash, and then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new controller -->
+  <requires>
+    <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
+  </requires>
+
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+    <value key="LVFS::UpdateMessage">Important: After updating to version 2.00, you cannot downgrade or roll back to an earlier firmware version.</value>
+    <value key="LVFS::UpdateMessage" xml:lang="zh-CN">重要提示：更新至版本 2.00 后，无法降级或回滚至较早的固件版本。</value>
+  </custom>
+</component>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2026 8BitDo <xuxy@8bitdo.com> -->
+<component type="firmware">
+  <id>com.8bitdo.m30.firmware</id>
+  <name>8BitDo M30 Bluetooth Gamepad</name>
+  <summary>Firmware for the 8BitDo M30 Bluetooth Gamepad</summary>
+  <description>
+    <p>
+      Update your 8BitDo M30 Bluetooth Gamepad to the latest firmware version to enjoy improved performance, new features, and bug fixes.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_2DC8&PID_5006 -->
+    <firmware type="flashed">49c74d94-86d7-5587-b48f-aa36decb1568</firmware>
+  </provides>
+  <url type="homepage">https://www.8bitdo.com/m30/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>8BitDo</developer_name>
+  <releases>
+    <release urgency="medium" version="2.01" date="2025-06-23">
+      <checksum filename="Firmware_M30_V2.01.dat" target="content"/>
+      <description xml:lang="zh-CN">
+        <p>
+          本次更新包含以下优化与修复：
+        </p>
+        <ul>
+          <li>新增支持 Switch 2 主机。</li>
+          <li>修复 Switch 模式同时交换按键和切换方向键不能保存的问题。</li>
+        </ul>
+      </description>
+      <description>
+        <p>
+          This release includes the following improvements and fixes:
+        </p>
+        <ul>
+          <li>Added support for Switch 2.</li>
+          <li>Fixed the issue of the Controller where the settings cannot be saved when doing the button swapping and D-pad remapping in Switch mode.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/M30.png</image>
+      <caption>Hold the Start button for 3 seconds to power off the controller, then press L + R + Start to enter update mode. The power indicator will flash, and then reconnect the controller.</caption>
+    </screenshot>
+  </screenshots>
+
+  <!-- only newer versions of fwupd know about the new controller -->
+  <requires>
+    <id compare="ge" version="1.0.3">org.freedesktop.fwupd</id>
+  </requires>
+
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.8bitdo</value>
+  </custom>
+</component>
