@@ -19,7 +19,7 @@
   <developer_name>8BitDo</developer_name>
   <releases>
     <release urgency="medium" version="2.01" date="2025-06-23">
-      <checksum filename="Firmware_M30_V2.01.dat" target="content"/>
+      <checksum filename="M30_Firmware_V2.01.dat" target="content"/>
       <description xml:lang="zh-CN">
         <p>
           本次更新包含以下优化与修复：

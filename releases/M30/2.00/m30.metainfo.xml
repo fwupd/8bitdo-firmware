@@ -19,7 +19,7 @@
   <developer_name>8BitDo</developer_name>
   <releases>
     <release urgency="critical" version="2.00" date="2023-06-27">
-      <checksum filename="Firmware_M30_V2.00.dat" target="content"/>
+      <checksum filename="M30_Firmware_V2.00.dat" target="content"/>
       <description xml:lang="zh-CN">
         <p>
           重要提示：请尽快更新至此版本。更新完成后，无法降级或回滚至较早的固件版本。
