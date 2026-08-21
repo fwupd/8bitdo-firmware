@@ -19,19 +19,21 @@
   <project_license>Proprietary</project_license>
   <developer_name>8Bitdo</developer_name>
   <releases>
-    <release urgency="medium" version="1.10" date="2019-04-08">
-      <checksum filename="M30_Firmware_V1.10.dat" target="content"/>
+    <release urgency="medium" version="2.01" date="2025-06-03">
+      <checksum filename="M30_Firmware_V2.01.dat" target="content"/>
       <description>
-        <p>
-          Enhanced the stability of the Bluetooth pairing.
-        </p>
+        <p>This stable release fixes the following issues:</p>
+        <ul>
+          <li>Added support for Switch 2.</li>
+          <li>Fixed the issue of the Controller where the settings cannot be saved when doing the button swapping and D-pad remapping in Switch mode.</li>
+        </ul>
       </description>
     </release>
   </releases>
   <screenshots>
     <screenshot type="default">
       <image type="source">https://raw.githubusercontent.com/hughsie/8bitdo-firmware/master/screenshots/M30.png</image>
-      <caption>Unplug the controller, hold down L1 + R1 + START until the red LED on top of the controller is flashing and then reconnect the controller.</caption>
+      <caption>Hold the Start button for 3 seconds to power off the controller, then press L + R + Start to enter update mode. The power indicator will flash, and then reconnect the controller.</caption>
     </screenshot>
   </screenshots>
 

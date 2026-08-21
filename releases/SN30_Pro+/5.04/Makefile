@@ -1,12 +1,10 @@
 # Copyright (C) 2016 Richard Hughes <richard@hughsie.com>
 
 VENDOR=8Bitdo
-PROJECT_NAME=M30
-VERSION=1.10
-FIRMWARE_FILES=				\
-	M30_Firmware_V$(VERSION).dat
-METAINFO_FILES=				\
-	m30.metainfo.xml
+PROJECT_NAME=SN30_Pro+
+VERSION=5.04
+FIRMWARE_FILES=Firmware_SN30_Pro+_V$(VERSION).dat
+METAINFO_FILES=sn30pro_plus.metainfo.xml
 
 all: $(VENDOR)-$(PROJECT_NAME)-$(VERSION).cab
 
@@ -17,4 +15,4 @@ check: $(METAINFO_FILES)
 	appstream-util validate-relax $(METAINFO_FILES)
 
 %.cab: $(FIRMWARE_FILES) $(METAINFO_FILES)
-	gcab --create --nopath $@ $(FIRMWARE_FILES) $(METAINFO_FILES)
+	gcab --create --nopath $@ "$(FIRMWARE_FILES)" $(METAINFO_FILES)
